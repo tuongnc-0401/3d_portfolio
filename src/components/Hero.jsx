@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "../styles";
-import Computers from "./canvas/Computers";
+import { ComputersCanvas } from "./canvas/Computers";
 
 const Hero = () => {
   return (
@@ -14,15 +14,15 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I', <span className="text-[#915eff]">Nguyen Cat Tuong</span>
+            Hi, I'm <span className="text-[#915eff]">Nguyen Cat Tuong</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am Javascript developer who loves web and design.
-            <br />I have gained experience in working with various projects
+            I am Javascript developer who loves designing and createing web
+            applications.
           </p>
         </div>
-     
       </div>
+      <ComputersCanvas />
     </section>
   );
 };
